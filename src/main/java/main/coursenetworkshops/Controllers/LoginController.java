@@ -22,7 +22,7 @@ public class LoginController {
         System.out.println(Login.getText());
         System.out.println(Password.getText());
         //DataBaseConnection.connection();
-        if (Login.getText().equals("admin") && Password.getText().equals("admin")) {
+        if (Login.getText().equals("Dima") && Password.getText().equals("rome2")) {
             DataBaseConnection.writeToDatabase(Login.getText(), Password.getText());
         } else {
             System.out.println("Please Try Again");
