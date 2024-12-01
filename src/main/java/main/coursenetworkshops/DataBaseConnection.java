@@ -17,7 +17,7 @@ public class DataBaseConnection {
         try {
             conn = DriverManager.getConnection(URL, USER, PASSWORD);
             System.out.println("Connected to database");
-        } catch (SQLException e) {
+        } catch (Exception e) {
             System.out.println("Error connecting to database");
             e.printStackTrace();
         }
@@ -34,7 +34,7 @@ public class DataBaseConnection {
             stmt.setCursorName(password);
             stmt.executeUpdate(sql);
             System.out.println("successfully wrote to the database");
-        } catch (SQLException e) {
+        } catch (Exception e) {
             e.printStackTrace();
             System.out.printf("Ошибка в writeToDatabase");
         }
